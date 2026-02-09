@@ -1,0 +1,46 @@
+body{
+    background-color: #caddfe;
+}
+.calculator{
+    border: 10px;
+    border-radius: 8px;
+}
+.display{
+    width: 300px;
+    height: 60px;
+    font-size: 26px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 550px;
+
+
+}
+button{
+    background-color: white;
+    padding: 26px;
+    margin-left: -5px;
+    border-radius: 8px;
+    
+    
+}
+.AC{
+   background-color: rgb(237, 166, 78);
+   margin-left: 550px;
+   
+}
+.point{
+    margin-left: 550px;
+}
+.four{
+    margin-left: 550px;
+}
+.nine{
+    margin-left: 550px;
+}
+.equal{
+    width: 191px;
+    background-color: rgb(125, 125, 231);
+}
+
+
