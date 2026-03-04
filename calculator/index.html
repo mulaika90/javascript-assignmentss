@@ -1,38 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="app.js"></script>
-    <div class="calculator">
-        <input type="number" class="display" id="display">
-        <div class="button">
-            <button onclick="operator()" class="AC">Ac</button>
-            <button onclick="operator()" class="divide">/</button>
-            <button onclick="operator()" class="multiply">*</button>
-            <button onclick="operator()" class="add">+</button>
-            <button onclick="append()" class="sub">-</button><br>
-            <button onclick="operator()" class="point">.</button>
-            <button onclick="operator()" class="per">%</button>
-          <button onclick="append(1)" class="one">1</button>
-            <button onclick="append(2)" class="two">2</button>
-            <button onclick="append(3)" class="three">3</button><br>
-            <button onclick="append(4)" class="four">4</button>
-            <button onclick="append(5)" class="five">5</button>
-            <button onclick="append(6)" class="six">6</button>
-            <button onclick="append(7)" class="seven">7</button>
-            <button onclick="append(8)" class="eight">8</button><br>
-            <button onclick="append(9)" class="nine">9</button>
-            <button onclick="append(0)" class="ten">0</button>
-            <button onclick="calculate()" class="equal">=</button>
+ </head>
+ <body>
+   <div class="calculator">
+    <div class="main">
+        <div class="box">
+            <input type="text" readonly="" id="input" placeholder="0">
+        </div>
+        <div class="innerbox">
+                        <button class="round clear" onclick="clearInput('AC')">Ac</button>
+            <button onclick="deletecha('DL')" class="roundclear">DL</button>
+            <button onclick="calculate('=')" class="equal">=</button>
 
-
+            <button onclick="writeOnly('/')" class="roundclear">/</button>
+        </div>
+        <div class="innerbox">
+            <button onclick="writeOnly(7)" class="round">7</button><br>
+            <button onclick="writeOnly(8)" class="round">8</button>
+            <button onclick="writeOnly(9)" class="per">9</button>
+          <button onclick="writeOnly('x')" class="round color">x</button>
+        </div>
+        <div class="innerbox">
+            <button onclick="writeOnly(4)" class="round">4</button><br>
+            <button onclick="writeOnly(5)" class="round">5</button>
+            <button onclick="writeOnly(6)" class="round">6</button>
+            <button onclick="writeOnly('-')" class="roundcolor">-</button>
+    </div>
+    <div class="innerbox">
+            <button onclick="writeOnly(7)" class="round">7</button>
+            <button onclick="writeOnly(8)" class="round">8</button><br>
+            <button onclick="writeOnly(9)" class="round">9</button><br>
+            <button onclick="writeOnly('+')" class="round color">+</button><br>
 
         </div>
     </div>
-</body>
-</html>
+   </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+ </body>
+ </html>
